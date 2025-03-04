@@ -7,7 +7,7 @@ WebOG GUI Overlays for popular games like Minecraft, Skyrim, Fortnite, Call of D
 WebOG Marketplace where users can trade in-game items, buy & sell digital assets, and transfer ownership via escrow.
 WebOG XP & Progression System that rewards players for in-game achievements and activities.
 WebOG Messenger & Watch Parties allowing players to chat, stream, and interact in real time.
-WebOG Airdrops & Token Betting System for earning and wagering digital assets.
+WebOG Airdrops 
 WebOG Developer Portal where devs can submit WebOG-compatible games, mods, WebGL projects, Unity creations, Android APKs, and more.
 WebOG Linux Distro & Android ROM providing a custom OS experience with app store support and special developer tools.
 Join WebOG and be part of the next evolution in gaming and digital interaction! 🚀🎮
