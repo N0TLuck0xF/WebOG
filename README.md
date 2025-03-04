@@ -1,3 +1,5 @@
+Looking for a compeditor with our written permission to use our business plan and model! 
+
 WebOG – The Ultimate Gaming & Metaverse Platform
 WebOG is a revolutionary platform that integrates seamlessly with your favorite games, providing an all-in-one hub for social interaction, marketplace trading, modding, and progression. With WebOG, players can access a fully immersive experience, featuring:
 
