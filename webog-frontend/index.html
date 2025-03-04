@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebOG - Login</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #00ff00;
+            font-family: 'Courier New', monospace;
+            text-align: center;
+        }
+        .container {
+            width: 400px;
+            margin: 100px auto;
+            padding: 20px;
+            border: 3px solid #00ff00;
+            background: #111;
+        }
+        h1 {
+            font-size: 24px;
+            text-shadow: 2px 2px 5px #00ff00;
+        }
+        input {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #00ff00;
+            background: #222;
+            color: #00ff00;
+        }
+        button {
+            background: #00ff00;
+            color: #000;
+            font-weight: bold;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #55ff55;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>💾 Welcome to WebOG 💾</h1>
+        <p>Login below to enter the system.</p>
+        <input type="text" placeholder="Username" id="username">
+        <br>
+        <input type="password" placeholder="Password" id="password">
+        <br>
+        <button onclick="login()">Login</button>
+    </div>
+
+    <script>
+        function login() {
+            let user = document.getElementById("username").value;
+            let pass = document.getElementById("password").value;
+            
+            if(user === "admin" && pass === "password") {
+                alert("Access Granted! Welcome to WebOG.");
+                window.location.href = "dashboard.html";
+            } else {
+                alert("Access Denied. Incorrect username or password.");
+            }
+        }
+    </script>
+</body>
+</html>

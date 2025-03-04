@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebOG Dashboard</title>
+    <style>
+        body {
+            background: #f0f0f0;
+            font-family: 'Courier New', Courier, monospace;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 2px solid #000;
+            background: #fff;
+        }
+
+        .box {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 2px solid #000;
+            background: #cce7ff;
+            text-align: center;
+        }
+
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background: linear-gradient(to bottom, #ffcc00, #ff9900);
+            border: 2px solid #ff9900;
+            border-radius: 5px;
+            text-decoration: none;
+            color: black;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .button:hover {
+            background: linear-gradient(to bottom, #ff9900, #ffcc00);
+            border-color: #ffcc00;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 20px;
+            color: #777;
+        }
+
+        .retro-header {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            font-size: 24px;
+            padding: 10px;
+            border-bottom: 5px solid #ff9900;
+        }
+
+        .content {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        /* Styles for the login form */
+        #loginForm {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #loginForm input {
+            padding: 10px;
+            margin: 5px;
+            border: 2px solid #000;
+        }
+
+        #loginForm button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background: #4caf50;
+            color: white;
+            border: 2px solid #388e3c;
+            cursor: pointer;
+        }
+
+        #loginForm button:hover {
+            background: #388e3c;
+            border-color: #2c6e28;
+        }
+
+        #dashboard {
+            display: none;
+        }
+    </style>
+    <script src="auth.js" defer></script> <!-- Link to your auth.js file -->
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="retro-header">
+        <h1>WebOG Dashboard</h1>
+    </div>
+
+    <!-- Login Form Section -->
+    <div id="loginForm">
+        <h2>Login to WebOG</h2>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <!-- Dashboard Section (Hidden by default) -->
+    <div id="dashboard">
+        <div class="container">
+            <div class="box">
+                <h2 id="welcomeMessage"></h2>
+                <p>Welcome to your WebOG Dashboard!</p>
+                <a href="#" class="button">Start</a>
+                <a href="#" class="button">Settings</a>
+                <a href="#" class="button">Help</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <button id="logoutButton">Logout</button>
+        </div>
+    </div>
+
+</body>
+</html>
