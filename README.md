@@ -1,5 +1,5 @@
 Looking for a compeditor with our written permission to use our business plan and model! 
-
+got a feeling they will try to shut this downn... Rich people tend to get mad when you create the web gamified! they took the web out of web browsers now calling them browsers and want to move to web3 well this is webGamified. I found it works good with webGL unity. I thought of it origianally as you can see the progression in my repos. 
 WebOG – The Ultimate Gaming & Metaverse Platform
 WebOG is a revolutionary platform that integrates seamlessly with your favorite games, providing an all-in-one hub for social interaction, marketplace trading, modding, and progression. With WebOG, players can access a fully immersive experience, featuring:
 
