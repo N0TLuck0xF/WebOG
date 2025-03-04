@@ -1,86 +1,130 @@
-OGWeb Development Plan
+Great additions! Here's the updated **WebOG Development Plan** with the **messaging system**, **user management**, and **external site linking**.
 
-Phase 1: Core Browser & Steam Integration
+---
 
-Develop OGWeb as a standalone executable (.exe) browser.
+## **🚀 WebOG Updated Development Plan**
 
-Implement masked site navigation (e.g., "website" maps to real domains).
+### **Phase 1: Web-Based Version (GitHub Pages)**
+1. **📌 Setup Basic WebOG Framework**
+   - Create `index.html` as the main entry point.
+   - Host it on **GitHub Pages** for easy access and updates.
+   - Implement a **login page** for users and admins.
+   - Store **admin credentials** securely for managing the platform.
 
-Integrate Steamworks API for achievements, levels, and user stats.
+2. **🔗 Site Navigation System (No TLDs, HTTPS, or WWW)**
+   - Users type just `sitename` (e.g., `webtube` loads `webtube.html`).
+   - **External site linking:**  
+     - If the site exists in WebOG → Open its `.html` version.  
+     - If the site doesn’t exist in WebOG → Redirect to the actual domain (e.g., typing `google` redirects to `https://google.com`).
+   - Use a **JSON-based site list** for easy updates.
 
-Create an OGWeb API for external game integration.
+3. **📧 Messaging System (Like Facebook Messenger)**
+   - **Real-time messaging** between users.
+   - **Group chats** for users and admins.
+   - Admins can **send announcements**.
+   - **Private messages** with notifications.
 
-Develop an in-game overlay for Steam-based browsing.
+4. **👥 User Management System**
+   - **Add & Delete Users** (Admin feature).
+   - Store **user profiles & settings**.
+   - Users can **customize their profile**.
 
-Phase 2: Gamification & User Engagement
+5. **🔧 Admin Control Panel**
+   - **Admin Login System** (Only authorized users can access it).
+   - Ability to:
+     - **Add, Edit, or Remove Sites**.
+     - **Add or Remove Users**.
+     - **Manage Messaging System**.
+     - **Deploy Updates** to WebOG.
 
-Introduce XP system for browsing activity.
+6. **🎨 WebOG GUI Browser**
+   - Create a **custom browser-like UI**.
+   - Implement:
+     - **Back/Forward buttons**.
+     - **A homepage that lists all available sites**.
+     - **Easy updating for adding new pages/sites**.
 
-Implement level progression and prestige mechanics.
+---
 
-Add achievements based on user interactions and discovery.
+### **Phase 2: Windows Application (.MSI)**
+1. **🏗️ Build a Standalone WebOG Launcher**
+   - Develop a **Minecraft-style launcher**.
+   - Users log in before accessing WebOG.
+   - Store login data locally or authenticate via a cloud-based system.
 
-Introduce in-app purchases or unlockable content.
+2. **💻 Convert WebOG to a Windows App**
+   - Package WebOG into a **secure `.msi` installer**.
+   - Ensure it **passes Windows security checks**.
+   - Include **auto-update functionality**.
 
-Phase 3: 3D Integration & Future Updates
+3. **🎮 Steam Integration**
+   - Prepare WebOG for **Steam release**.
+   - Implement **Steam login support**.
+   - Add **Steam achievements & tracking**.
 
-Develop an interactive 3D web experience.
+---
 
-Allow users to explore the internet as a virtual world.
+### **Phase 3: XP System & Progression**
+1. **📊 XP & Leveling System**
+   - Users earn XP by using WebOG.
+   - Max **Level 70**, with **12 Prestiges**.
+   - Each prestige grants special benefits (e.g., new customization options).
 
-Implement VR support for next-level immersion.
+2. **🏆 Achievements & Leaderboard**
+   - Implement achievements for activities like:
+     - Visiting sites.
+     - Finding hidden pages.
+     - Interacting with WebOG.
+   - Add a **leaderboard** for top users.
 
-API Features
+---
 
-Endpoint
+### **Phase 4: WebOG API & Developer Integration**
+1. **🛠️ WebOG API**
+   - Developers can **integrate WebOG into their games**.
+   - API features:
+     - **Launch WebOG inside a game**.
+     - **Sync user progress & XP**.
+     - **Retrieve in-game inventory items**.
 
-Method
+2. **🎮 List of Games for WebOG Integration**
+   - **Minecraft (Modded WebOG GUI)**
+   - **GMod (WebOG as an in-game browser)**
+   - **Roblox (Custom WebOG integration)**
+   - **VRChat (WebOG inside a virtual environment)**
+   - **FiveM (GTA V mod support for WebOG browser)**
 
-Description
+---
 
-/search?query=website
+### **Phase 5: Inventory System & User Items**
+1. **📦 User Inventory**
+   - Users **find & collect items** in WebOG.
+   - Items can be **stored, traded, or used** in WebOG.
+   - Special items unlock **new features or customization**.
 
-GET
+2. **🛠️ Item Placement System**
+   - Users can **place items** in WebOG when allowed.
+   - Admins can **restrict or enable item placements**.
 
-Returns the mapped URL for a given search term
+---
 
-/navigate?site=website
+### **Final Phase: Full Steam & Windows Integration**
+1. **🎮 Finalize Steam Version**
+   - Submit WebOG as a **game on Steam**.
+   - Ensure **full Steam Deck compatibility**.
+   - Add **Steam Cloud sync** for user progress.
 
-GET
+2. **🔐 Security & Performance Optimizations**
+   - Make WebOG **fast & secure**.
+   - Ensure **no security risks** in login or data storage.
 
-Redirects OGWeb to a masked domain
+---
 
-/bookmark
+### **🔥 Next Steps**
+- Start by **building the GitHub Pages version**.
+- Implement **login, admin panel, and easy site updates**.
+- Move on to the **Windows app & Steam integration**.
 
-POST
+---
 
-Saves a site to the user’s bookmarks
-
-/history
-
-GET
-
-Retrieves the browsing history
-
-Platform Compatibility
-
-Windows (.exe format, distributed via Steam)
-
-Future support for Linux and macOS
-
-Legal & Licensing
-
-OGWeb is a closed-source, proprietary application.
-
-Users cannot modify or redistribute the software.
-
-Any integration with OGWeb must follow API usage guidelines.
-
-Next Steps
-
-Finalize prototype and testing.
-
-Prepare for Steam submission.
-
-Begin early access rollout and community engagement.
-
+Does this plan now cover everything you want? 🚀💡
